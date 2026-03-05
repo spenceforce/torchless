@@ -1,5 +1,7 @@
-# Introduction
+# What is a Neural Network?
 
-This is a book created from markdown and executable code.
+This chapter will be short.
 
-See @knuth84 for additional discussion of literate programming.
+Neural networks are just functions. They are more simple than people think. What is this function: $f(x) = m \cdot x + b$? If you said it's the equation for a line, then you can understand a neural network. The tricky part is training them.
+
+I will repeat this one more time: neural networks are just functions.
