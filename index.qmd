@@ -1,0 +1,3 @@
+# Preface {.unnumbered}
+
+I've had this idea in my head to write a book on building neural networks from scratch (hence the title). Recently I came across this [post](https://karpathy.github.io/2026/02/12/microgpt/) from Andrej Karpathy which is a single file implementation of a GPT. What's more impressive is it's pure python; no deep learning library involved. That post has inspired me to get off my butt and start writing.

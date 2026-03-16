@@ -6,6 +6,7 @@ book:
   author: "Spencer Mitchell"
   date: "3/5/2026"
   chapters:
+    - index.qmd
     - chapters/slopes.ipynb
     - references.qmd
 
