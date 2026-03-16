@@ -3,12 +3,10 @@ project:
 
 book:
   title: "Neural Networks...from Sratch!"
-  author: "Norah Jones"
+  author: "Spencer Mitchell"
   date: "3/5/2026"
   chapters:
-    - index.qmd
-    - chapters/intro.qmd
-    - chapters/the_cornerstone_of_training.ipynb
+    - chapters/slopes.ipynb
     - references.qmd
 
 bibliography: references.bib
