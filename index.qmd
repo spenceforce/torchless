@@ -1,8 +1,46 @@
 # Introduction {.unnumbered}
 
+::: {.callout-important}
+Please do not skip this chapter! This is where we set up the project.
+:::
+
 We are going to build not just a neural network from scratch, but a Python package for creating neural networks. It will not be fast, but it will show you how neural networks work and how they are trained.
 
-## Setting up our project
+# How to read this book
+
+Some text books present chapters (or groups of chapters) as independent subjects that learners can explore in any order. That is not the case for this book. We are going to create a neural network package from the ground up and each chapter will build on the last, so you should start at the beginning and finish at the end.
+
+## Prerequisites
+
+There are a few things you need to know before starting this book:
+
+- how to create a class in Python
+- what a function is
+- the equation for a line
+
+That's it. If you find you know these things, but struggle with the book, please email me at [smitchell556[at]gmail.com](mailto:smitchell556@gmail.com).
+
+## Concept presentation
+
+This will not be a deep dive into mathematics. The concepts needed to understand and train neural networks will be presented incrementally using examples and code to develop an intuitive understanding. At no point will an equation be thrown at you with the expectation that you'll just get it.
+
+## This book is for people who:
+
+- want an end to end understanding of neural networks
+- are new to neural networks
+- are new to _training_ neural networks
+- understand how neural network training works at a high level, but want a more practical understanding
+
+## This book is _not_ for people who:
+
+- want to learn a specific subtopic related to neural networks
+- want to learn optimization techniques to speed up training/inference
+- are well versed in the theory and practice of training neural networks
+- are only interested in the theory of neural networks
+
+This does not cover all possibilities, but it should give you a sense of which group you fall under.
+
+# Setting up our project
 
 We'll create a Python package called `torchless`. Initialize the project with [`uv`](https://docs.astral.sh/uv/guides/projects/#creating-a-new-project).[[uv](https://docs.astral.sh/uv/) is a fantastic package manager for Python. It's easy, it works, and we don't have to write our own `pyproject.toml`]{.aside}
 
@@ -11,11 +49,23 @@ $ uv init --bare torchless
 $ mkdir torchless/torchless
 ```
 
-All code we write will be under `torchless/torchless`.
+All code we write will be under `torchless/torchless`. Let's create an empty file to get started.
+
+```bash
+$ touch torchless/torchless/__init__.py
+```
 
 ## Using the package
 
-`uv run python` will start a Python interpreter with the package available for import.
+Running the Python interpreter with `uv` will expose our `torchless` package.
+
+```bash
+$ cd torchless
+$ uv run python
+>>> import torchless
+>>> torchless
+<module 'torchless' from '/path/to/torchless/torchless/__init__.py'>
+```
 
 ## Installing the package
 

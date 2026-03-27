@@ -22,3 +22,5 @@ format:
       - brand
   pdf:
     documentclass: scrreprt
+
+email-obfuscation: javascript
