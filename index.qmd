@@ -40,7 +40,7 @@ This will not be a deep dive into mathematics. The concepts needed to understand
 
 This does not cover all possibilities, but it should give you a sense of which group you fall under.
 
-# Setting up our project
+# Setting up our project {#sec-setup-project}
 
 We'll create a Python package called `torchless`. Initialize the project with [`uv`](https://docs.astral.sh/uv/guides/projects/#creating-a-new-project).[[uv](https://docs.astral.sh/uv/) is a fantastic package manager for Python. It's easy, it works, and we don't have to write our own `pyproject.toml`]{.aside}
 
