@@ -1,3 +1,26 @@
-# Preface {.unnumbered}
+# Introduction {.unnumbered}
 
-I've had this idea in my head to write a book on building neural networks from scratch (hence the title). Recently I came across this [post](https://karpathy.github.io/2026/02/12/microgpt/) from Andrej Karpathy which is a single file implementation of a GPT. What's more impressive is it's pure python; no deep learning library involved. That post has inspired me to get off my butt and start writing.
+We are going to build not just a neural network from scratch, but a Python package for creating neural networks. It will not be fast, but it will show you how neural networks work and how they are trained.
+
+## Setting up our project
+
+We'll create a Python package called `torchless`. Initialize the project with [`uv`](https://docs.astral.sh/uv/guides/projects/#creating-a-new-project).[[uv](https://docs.astral.sh/uv/) is a fantastic package manager for Python. It's easy, it works, and we don't have to write our own `pyproject.toml`]{.aside}
+
+```bash
+$ uv init --bare torchless
+$ mkdir torchless/torchless
+```
+
+All code we write will be under `torchless/torchless`.
+
+## Using the package
+
+`uv run python` will start a Python interpreter with the package available for import.
+
+## Installing the package
+
+You can install the package with `pip install -e .` which installs it in editable mode. This way if you make changes those will be usable in the environment without having to reinstall.
+
+# Other resources
+
+I've had this idea in my head to write a book on building neural networks from scratch and I was inspired to get off my butt after coming across this [microgpt](https://karpathy.github.io/2026/02/12/microgpt/) from Andrej Karpathy which is a single file implementation of a GPT. I can't recommend Andrej Karpathy's work enough. His microgpt is a work of art and he's also released a YouTube series, [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html), which builds a neural network engine from scratch. This book is similar conceptually, just from a different angle.
