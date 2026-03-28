@@ -1,6 +1,4 @@
-"""
-Constant: a fixed numeric value whose gradient is always zero.
-"""
+"""Fixed numeric value whose gradient is always zero."""
 
 
 class Constant:

@@ -3,7 +3,7 @@ name: docstring
 description: Add or improve Python docstrings and inline comments in a file or across the project. Use when asked to document a file, add docstrings, or improve code documentation.
 argument-hint: "[file-path]"
 disable-model-invocation: true
-allowed-tools: Read, Edit, Glob, Grep
+allowed-tools: Read, Glob, Grep
 ---
 
 Add or improve Google-style docstrings and inline comments for Python files.
