@@ -22,3 +22,7 @@ Style reference: [google-style-guide.md](google-style-guide.md) — covers modul
 2. **Identify gaps** — find every module, class, public method, and function that is missing a docstring or has one that is incomplete (missing Args/Returns/Raises sections when they apply).
 3. **Write docstrings** following the rules below.
 4. **Add inline comments** for non-obvious logic only.
+
+## Style choices
+
+* Hanging indent: use two spaces
