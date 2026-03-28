@@ -1,4 +1,3 @@
-#| filename: torchless/base/value.py
 class Value:
 
     def __init__(self, data):
