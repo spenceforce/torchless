@@ -4,14 +4,11 @@ Constant: a fixed numeric value whose gradient is always zero.
 
 
 class Constant:
-    """A fixed numeric value.
-
-    Attributes:
-      data: The numeric value held by this constant.
-    """
+    """A fixed numeric value whose gradient is always zero."""
 
     def __init__(self, data):
-        """
+        """Initializes the constant with a fixed numeric value.
+
         Args:
           data: The numeric value to store.
         """
@@ -23,11 +20,11 @@ class Constant:
         return self._data
 
     def compute_grad(self):
-        """
-        Compute the gradient of this constant. Since a constant does not change, its gradient is
-        always zero.
+        """Computes the gradient of this constant.
+
+        Since a constant does not change, its gradient is always zero.
 
         Returns:
-          0
+          Always 0.
         """
         return 0
