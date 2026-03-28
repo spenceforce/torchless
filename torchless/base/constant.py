@@ -7,13 +7,13 @@ class Constant:
     """A fixed numeric value.
 
     Attributes:
-        data: The numeric value held by this constant.
+      data: The numeric value held by this constant.
     """
 
     def __init__(self, data):
         """
         Args:
-            data: The numeric value to store.
+          data: The numeric value to store.
         """
         self._data = data
 
@@ -28,6 +28,6 @@ class Constant:
         always zero.
 
         Returns:
-            0
+          0
         """
         return 0
